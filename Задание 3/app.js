@@ -1,4 +1,23 @@
-let apple = [['iphone 5s', 'iphone 6','iphone 7', 'iphone 8', 'iphone x'],['MacBook pro 10', 'MacBook pro 11','MacBook pro 12',
-'MacBook pro 13', 'MacBook pro 14'], ['ipad 4', 'ipad 5', 'ipad mini 8', 'ipad pro x', 'ipad 11'], ['apple watch', 'apple watch 2', 'apple watch 3', 'apple watch pro 2', 'apple watch pro max 3']];
-console.log(apple);
-console.log(apple[0][3]);
+const college = [
+    {
+        namestudent: 'Bogdan',
+        cours: '3',
+        speciality: 'programm',
+        GradePointAverage: '4',
+
+        couples: {
+            morning: 'физра',
+            day: 'мдк',
+            evening: 'доп уроки'
+        }
+    },
+    {
+        namePrepod: 'tixon',
+        speciality: 'преподаватель физкультуры',
+        age: 30,
+        DopCours: ['обж','история']
+    }
+]
+
+console.log(college[0]["namestudent"],college[0]["speciality"]);
+console.log(college[1]["namePrepod"],college[1]["DopCours"], college[1]["speciality"]);
