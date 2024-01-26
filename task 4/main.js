@@ -11,9 +11,9 @@ const students = [
 { name: 'диана', codeStudents: 16, predmets: ['обж', 'литература']},
 ];
 function filterstudents(targetArray, targetpredmets) {
-    return targetArray.filter(person => person.codeStudents === targetpredmets);
+    return targetArray.filter(person => person.predmets.includes(targetpredmets));
 }
 
-let resultFilter = filterstudents(students, 19 )
+let resultFilter = filterstudents(students, 'география' )
 
 console.log(resultFilter);
