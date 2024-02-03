@@ -1,0 +1,21 @@
+class cock{
+    p;
+    result;
+    constructor(varp){
+        this.p = varp
+    }
+    filter(){
+        return this.p.filter(varp=> (varp %3 ===0 || varp %5 ===0 || varp %7 ===0))
+    }
+    print(){
+    this.result = this.filter()
+    console.log(this.result)
+    
+    }
+    
+    
+    
+}
+      const p = [1,2,3,4,5,6,7,8,9]
+      const resultArrays = new cock (p)
+      resultArrays.print()
